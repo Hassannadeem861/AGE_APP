@@ -1,9 +1,9 @@
 
 function age() {
 
-    var d1 = document.querySelectorById("date").value
-    var m1 = document.querySelectorById("month").value
-    var y1 = document.querySelectorById("year").value
+    var d1 = document.getElementById("date").value
+    var m1 = document.getElementById("month").value
+    var y1 = document.getElementById("year").value
 
     var date = new Date();
     var d2 = date.getDate();
@@ -27,6 +27,6 @@ function age() {
     var m = m2 - m1;
     var y = y2 - y1;
 
-    document.querySelectorById("age").innerHTML = "Your age is  " + y + " Years " + m + " Months " + d + "Days";
+    document.getElementById("age").innerHTML = "Your age is  " + y + " Years " + m + " Months " + d + "Days";
 
 }
